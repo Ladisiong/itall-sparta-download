@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>잇올 스파르타 몰입형 기숙학원 학습전략실</title>
+    
+    <!-- SEO 메타태그 -->
+    <meta name="description" content="2025 대입 준비를 위한 최신 기출문제와 상세 해설 - 학생별 맞춤 학습 관리">
+    <meta name="keywords" content="대입, 수능, 사회탐구, 과학탐구, 한국사, 신문사설, 경제이론요약집, 기출문제, 해설, 학습관리">
+    <meta name="author" content="잇올스파르타몰입형기숙학원">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="잇올스파르타몰입형기숙학원 학습자료">
+    <meta property="og:description" content="QR코드로 간편하게 받는 최신 입시 자료 - 학생별 맞춤 관리">
+    <meta property="og:type" content="website">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+            line-height: 1.6;
+            color: #1f2937;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+
+        .header {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 20px 0;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #1e40af;
+        }
+
+        .logo::before {
+            content: "📚";
+            margin-right: 10px;
+            font-size: 2rem;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        .main-card {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(15px);
+            border-radius: 25px;
+            padding: 50px 40px;
+            box-shadow: 0 25px 50px rgba(0,0,0,0.15);
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .main-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+            background: linear-gradient(135deg, #1e40af, #3b82f6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .main-subtitle {
+            font-size: 1.2rem;
+            color: #4b5563;
+            margin-bottom: 40px;
+        }
+
+        .auto-update-badge {
+            background: linear-gradient(135deg, #10b981, #059669);
+            color: white;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            display: inline-block;
+            margin-bottom: 20px;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.8; }
+        }
+
+        .stats-row {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+
+        .stat-card {
+            background: linear-gradient(135deg, #f0f9ff, #e0f2fe);
+            border: 2px solid #bae6fd;
+            border-radius: 15px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #1e40af;
+            margin-bottom: 5px;
+        }
+
+        .stat-label {
+            color: #4b5563;
+            font-size: 0.9rem;
+        }
+
+        /* 추가 스타일들... */
+        
+        .modal {
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.5);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .modal-content {
+            background: white;
+            padding: 30px;
+            border-radius: 20px;
+            width: 90%;
+            max-width: 450px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+            animation: modalSlideIn 0.3s ease;
+        }
+
+        @keyframes modalSlideIn {
+            from { opacity: 0; transform: translateY(-50px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* 반응형 디자인 */
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px 15px;
+            }
+
+            .main-card {
+                padding: 30px 25px;
+            }
+
+            .main-title {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <div class="logo">잇올 스파르타 몰입형 기숙학원</div>
+            <div style="color: #6b7280; font-size: 0.9rem;">
+                <span class="online-indicator"></span>
+                📱 QR코드로 간편하게!
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="main-card">
+            <div class="auto-update-badge">🤖 자동 업데이트 시스템</div>
+            <h1 class="main-title">2025 입시 학습자료</h1>
+            <p class="main-subtitle">📚 20개 과목 체계적 관리 • 🎯 과목별 세분화 시스템 • 👤 학생별 맞춤 관리</p>
+            
+            <div class="stats-row">
+                <div class="stat-card">
+                    <div class="stat-number" id="totalDownloads">---</div>
+                    <div class="stat-label">총 다운로드</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" id="todayDownloads">--</div>
+                    <div class="stat-label">오늘 다운로드</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" id="totalFiles">--</div>
+                    <div class="stat-label">총 파일 수</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">20</div>
+                    <div class="stat-label">과목 수</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="download-grid" id="downloadGrid">
+            <!-- 동적으로 생성됨 -->
+        </div>
+
+        <div class="loading" id="loading" style="display: none;">
+            <div class="spinner"></div>
+            <p>파일 목록을 불러오는 중입니다...</p>
+        </div>
+    </div>
+
+    <!-- 학생 정보 입력 모달 -->
+    <div id="studentInfoModal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>🎓 학생 정보 입력</h2>
+                <p>간단한 정보만 입력하시면 다음부터는 자동으로 적용됩니다</p>
+            </div>
+            
+            <form id="studentInfoForm">
+                <div class="form-group">
+                    <label for="studentName">👤 이름 *</label>
+                    <input type="text" id="studentName" name="name" required placeholder="홍길동">
+                </div>
+                
+                <div class="form-group">
+                    <label for="targetUniversity">🎯 희망대학</label>
+                    <input type="text" id="targetUniversity" name="targetUniversity" placeholder="서울대학교 (선택사항)">
+                </div>
+                
+                <div class="form-actions">
+                    <button type="button" class="btn-secondary" onclick="skipStudentInfo()">나중에 입력</button>
+                    <button type="submit" class="btn-primary">정보 저장하고 시작</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        // ========================================
+        // 설정 및 구성 (🔥 여기만 수정하세요!)
+        // ========================================
+        
+        const CONFIG = {
+            SCRIPT_URL: 'https://script.google.com/macros/s/AKfycbyVCIUqANdN3fbcd95A8peyWMgmiMFvtVftInSTN30JkaBalOvDeBfmlfDskWNFWQr80w/exec', // 3단계에서 복사한 웹앱 URL로 교체
+            FOLDER_ID: '1EI1pEg74T6puhJZhtlnjnH7o66iYWh1-', // 1단계에서 복사한 폴더 ID로 교체
+            
+            // 과목별 설정
+            SUBJECTS: {
+                // 사회탐구 과목들
+                korean_geography: { name: '한국지리', category: '사회탐구', icon: '🗺️', color: 'social', hasSubFolders: true },
+                politics_law: { name: '정치와법', category: '사회탐구', icon: '⚖️', color: 'social', hasSubFolders: true },
+                ethics_thought: { name: '윤리와사상', category: '사회탐구', icon: '💭', color: 'social', hasSubFolders: true },
+                world_geography: { name: '세계지리', category: '사회탐구', icon: '🌍', color: 'social', hasSubFolders: true },
+                world_history: { name: '세계사', category: '사회탐구', icon: '🏛️', color: 'social', hasSubFolders: true },
+                life_ethics: { name: '생활과윤리', category: '사회탐구', icon: '🤝', color: 'social', hasSubFolders: true },
+                social_culture: { name: '사회문화', category: '사회탐구', icon: '👥', color: 'social', hasSubFolders: true },
+                east_asian_history: { name: '동아시아사', category: '사회탐구', icon: '🏮', color: 'social', hasSubFolders: true },
+                economics_social: { name: '경제', category: '사회탐구', icon: '📈', color: 'social', hasSubFolders: true },
+                
+                // 과학탐구 과목들
+                chemistry1: { name: '화학1', category: '과학탐구', icon: '🧪', color: 'science', hasSubFolders: true },
+                earth_science1: { name: '지구과학1', category: '과학탐구', icon: '🌍', color: 'science', hasSubFolders: true },
+                biology1: { name: '생명과학1', category: '과학탐구', icon: '🧬', color: 'science', hasSubFolders: true },
+                physics1: { name: '물리학1', category: '과학탐구', icon: '⚛️', color: 'science', hasSubFolders: true },
+                chemistry2: { name: '화학2', category: '과학탐구', icon: '🔬', color: 'science', hasSubFolders: true },
+                earth_science2: { name: '지구과학2', category: '과학탐구', icon: '🌋', color: 'science', hasSubFolders: true },
+                biology2: { name: '생명과학2', category: '과학탐구', icon: '🦠', color: 'science', hasSubFolders: true },
+                physics2: { name: '물리학2', category: '과학탐구', icon: '🔭', color: 'science', hasSubFolders: true },
+                
+                // 기타 과목들
+                korean_history: { name: '한국사', category: '기타', icon: '📜', color: 'history', hasSubFolders: true },
+                economic_theory: { name: '경제이론요약집', category: '기타', icon: '💰', color: 'economics', hasSubFolders: false },
+                editorial: { name: '신문사설', category: '기타', icon: '📰', color: 'editorial', hasSubFolders: false }
+            }
+        };
+
+        // ========================================
+        // JavaScript 함수들 (여기는 수정하지 마세요)
+        // ========================================
+        
+        let currentFileList = {};
+        let currentStudentInfo = null;
+
+        // 초기화
+        async function init() {
+            console.log('📚 잇올 스파르타 학습자료 시스템 시작');
+            
+            if (CONFIG.SCRIPT_URL.includes('YOUR_')) {
+                console.warn('⚠️ 구글 앱스 스크립트 URL이 설정되지 않았습니다!');
+                showError('시스템 설정이 완료되지 않았습니다. 관리자에게 문의해주세요.');
+                return;
+            }
+            
+            await checkStudentInfo();
+            await Promise.all([
+                renderDownloadCards(),
+                updateStats()
+            ]);
+            
+            console.log('✅ 시스템 초기화 완료');
+        }
+
+        // 페이지 로드 시 초기화
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', init);
+        } else {
+            init();
+        }
+
+        // 기타 필요한 함수들...
+        async function checkStudentInfo() {
+            // 학생 정보 확인 로직
+        }
+
+        async function renderDownloadCards() {
+            // 다운로드 카드 렌더링 로직
+        }
+
+        async function updateStats() {
+            // 통계 업데이트 로직
+        }
+
+        function showError(message) {
+            console.error(message);
+        }
+    </script>
+</body>
+</html>
